@@ -10,7 +10,7 @@ import { ChartModule } from 'angular-highcharts';
   ],
   imports: [
     BrowserModule,
-    ChartModule
+    ChartModule // add ChartModule to your imports
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,14 +7,14 @@ import { Chart } from 'angular-highcharts';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  chart = new Chart({
-    title: {
-      text: 'Combination chart'
+  chart = new Chart({ // Creating an instance of Chart object
+    title: {  // Chart's main title
+      text: 'Combination chart' // Chart's title
     },
-    xAxis: {
-      categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+    xAxis: {  // X axis or category axis (Normally, Horizontal axis)
+      categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']  // Using names instead of numbers
     },
-    series: [
+    series: [ // Series options for specific data and the data itself
       {
         type: 'column',
         name: 'Jane',
@@ -41,7 +41,7 @@ export class AppComponent {
         data: [
           {
             name: 'Jane',
-            y: 13
+            y: 13 // Y value of point
           },
           {
             name: 'John',
@@ -52,10 +52,9 @@ export class AppComponent {
             y: 19
           }
         ],
-        center: [100, 80],
-        size: 100,
-        showInLegend: false,
-        dataLabels: {
+        center: [100, 80],  // The center of the pie chart relative to the plot area (% or px)
+        size: 100,  // The diameter of the pie relative to the plot area (% or px)
+        dataLabels: { // Options for the series data labels, appearing next to each data point
           enabled: false
         }
       },
