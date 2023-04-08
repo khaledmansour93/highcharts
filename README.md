@@ -1,27 +1,24 @@
 # HighchartsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+The goal of this project is to display a combination of 3 different types of charts (column, spline and pie) in an Angular app using angular-highcharts library
 
-## Development server
+## How to use angular-highcharts?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+For this project, angular-highcharts is included using the [distribution package](https://www.npmjs.com/package/angular-highcharts)
 
-## Code scaffolding
+## Development environment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Nodejs v16.15.1
+- npm v8.11.0
+- Angular CLI v15.2.4
+- IDE: VSCode
 
-## Build
+## Procedures
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Create an Angular project called *highchartsApp* using the following command: ng new highchartsApp
+2. Download and install [angular-highcharts](https://www.npmjs.com/package/angular-highcharts)
+3. Modify *app.module.ts*, *app.component.ts* and *app.component.html* (For template: Remove *button* element) as described [here](https://www.npmjs.com/package/angular-highcharts)
+4. Modify *app.component.ts* using only the following properties: *title*, *xAxis*, *series* (For *pie* type: Don't use *color* property as it isn't compatible with this version of *angular-highcharts*), *center*, *size* and *dataLabels* described [here](https://www.tutorialspoint.com/angular_highcharts/angular_highcharts_combinations_column.htm)
+5. Build app using the following command: ng-serve-o and the output should appear as follows:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Chart](https://user-images.githubusercontent.com/41340307/230717910-d2a0ebb7-eae5-4a5a-a8f3-ba02ec7bd6ba.PNG)
