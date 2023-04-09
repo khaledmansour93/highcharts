@@ -1,1 +1,22 @@
-<div [chart]="chart"></div> <!-- Template where chart is displayed -->
+<!-- Template where chart is displayed -->
+
+<!-- <div [chart]="chart"></div> -->
+
+<div class="container-fluid">
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div [chart]="basicColumnChart"></div>
+        </div>
+        <div class="col-md-6">
+            <div [chart]="basicLineChart"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div [chart]="basicPieChart"></div>
+        </div>
+        <div class="col-md-6">
+            <div [chart]="basicBarChart"></div>
+        </div>
+    </div>
+</div>
